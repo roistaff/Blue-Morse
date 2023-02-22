@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='blue-morse',
-    version='0.1',
+    version='0.2',
     packages=['blue_morse'],
     description='Bluetooth button morse app',
     author='Roi Staff',
