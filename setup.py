@@ -8,8 +8,7 @@ setup(
     author='Roi Staff',
     author_email='roistaff1983@gmail.com',
     install_requires=[
-        'evdev',
-        'git+https://github.com/roistaff/PyMorse',
+        'evdev'
     ],
     entry_points={
         'console_scripts': [
