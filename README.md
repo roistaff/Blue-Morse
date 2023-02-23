@@ -1,4 +1,4 @@
-![rogo](C830AE75-E3B1-43AC-BDE6-0EB985789BB2.jpeg) 
+![rogo](https://github.com/roistaff/Blue-Morse/blob/819603bd407b57c48134530fb3eb081878095554/etc/rogo2.jpg) 
 # Blue-Morse
 ## What is Blue-Morse?
 Have you ever seen this?
