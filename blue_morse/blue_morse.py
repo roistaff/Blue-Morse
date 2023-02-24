@@ -3,11 +3,20 @@ from evdev import InputDevice, list_devices
 import time
 import pymorse
 import sys
-def search_device(searchname="BT Shutter Consumer Control",):
+args = sys.argv
+global spacetime
+spacetime = 1.5
+global devicename
+devicename = "BT Shutter Consumer Control"
+def set_spacetime(time):
+    spacetime = time
+def set_devicename(name):
+    devicename = name
+def search_device():
     found = 0
     devices = [evdev.InputDevice(path) for path in evdev.list_devices()]
     for device in devices:
-        if searchname in device.name:
+        if devicename in device.name:
             found = 1
             print(device.path)
             device_path = device.path
@@ -29,7 +38,7 @@ def main(device_path):
                 if event.type == evdev.ecodes.EV_KEY:
                     outime = time.time()
                     outtime = outime-end
-                    if outtime > 1.5:
+                    if outtime > spacetime:
                         space = 1
                     else:
                         space = 0
@@ -58,5 +67,11 @@ def main(device_path):
             print("retry...", end='\r')
             time.sleep(1)
 def autostart():
+    if len(args) > 1:
+        if args[1] == "-sc":
+            set_spacetime(float(args[2]))
+        elif args[1] == "-dc":
+            name1 = str(input("device name==>> "))
+            set_devicename(name1)
     device=search_device()
     main(device)
