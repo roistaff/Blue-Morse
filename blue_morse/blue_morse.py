@@ -22,7 +22,7 @@ def search_device():
             device_path = device.path
             return device_path
     if found == 0:
-        print("No found")
+        print("No found.Please check device name,etc.Try again.")
         sys.exit()
 def main(device_path):
     global device
@@ -73,5 +73,9 @@ def autostart():
         elif args[1] == "-dc":
             name1 = str(input("device name==>> "))
             set_devicename(name1)
+        elif args[1] == "-h":
+            print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
+        else:
+            print("Unknown command.Please write "blue-morse -h"")
     device=search_device()
     main(device)
