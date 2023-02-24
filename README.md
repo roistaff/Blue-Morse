@@ -20,3 +20,11 @@ blue-morse
 ```
 
 ### command option
+```
+blue-morse -sc 2 (exsample)
+```
+This command is setting spacetime.Spacetime has  replaced "_".
+output exsample:
+```
+
+```
