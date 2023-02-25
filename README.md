@@ -35,7 +35,7 @@ exsample:
 ```
 blue-morse -dc "BT Shutter"
 ```
-This command is setting device name.Default is "BT Shutter".If your device is other name ,use this command.
+This command is setting device name.Default is "BT Shutter".If your device is other name ,use this command.  
 
 output exsample:
 ```
