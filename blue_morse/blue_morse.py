@@ -76,6 +76,6 @@ def autostart():
         elif args[1] == "-h":
             print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
         else:
-            print("Unknown command.Please write "blue-morse -h"")
+            print("Unknown command.Please write 'blue-morse -h'")
     device=search_device()
     main(device)
