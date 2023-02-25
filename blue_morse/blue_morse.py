@@ -16,7 +16,6 @@ def search_device():
     found = 0
     devices = [evdev.InputDevice(path) for path in evdev.list_devices()]
     devices = sorted(devices, key=lambda x: x.name)
-    print(devices)
     for device in devices:
         if devicename in device.name:
             found = 1
@@ -27,7 +26,6 @@ def search_device():
         sys.exit()
 def main(device_path):
     device =evdev.InputDevice(device_path)
-    print(device_path)
     text = ""
     end = 3000000000
     while True:
