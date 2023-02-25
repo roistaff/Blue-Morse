@@ -7,7 +7,7 @@ args = sys.argv
 global spacetime
 spacetime = 1.5
 global devicename
-devicename = "BT Shutter Consumer Control"
+devicename = "BT Shutter"
 def set_spacetime(time):
     spacetime = time
 def set_devicename(name):
