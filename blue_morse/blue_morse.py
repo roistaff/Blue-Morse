@@ -76,7 +76,7 @@ def autostart():
             print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
             sys.exit()
         else:
-            print("Unknown command.Please write 'blue-morse -h'")
+            print("Unknown command.Please write 'blue-morse -h'.")
             sys.exit()
     device=search_device()
     main(device)
