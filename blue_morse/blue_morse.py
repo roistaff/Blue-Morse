@@ -71,10 +71,10 @@ def autostart():
         if args[1] == "-sc":
             set_spacetime(float(args[2]))
         elif args[1] == "-dc":
-            name1 = str(input("device name==>> "))
-            set_devicename(name1)
+            set_devicename(str(args[2]))
         elif args[1] == "-h":
             print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
+            sys.exit()
         else:
             print("Unknown command.Please write 'blue-morse -h'")
             sys.exit()
