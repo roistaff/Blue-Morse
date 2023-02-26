@@ -30,6 +30,7 @@ def main(device_path):
     end = 3000000000
     while True:
         try:
+            print("Blue-Morse")
             print(device)
             print("OUTPUT:")
             for event in device.read_loop():
@@ -71,8 +72,11 @@ def autostart():
         elif args[1] == "-dc":
             set_devicename(str(args[2]))
         elif args[1] == "-h":
-            print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
+            print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -os (txt)  #morse-code sample \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
             sys.exit()
+        elif args[1] == "-os":
+            sample = pymorse.string_to_code(str(args[2]))
+            print("Morse sample:",sample)
         else:
             print("Unknown command.Please write 'blue-morse -h' ")
             sys.exit()
