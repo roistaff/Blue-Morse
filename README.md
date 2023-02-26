@@ -37,7 +37,11 @@ blue-morse -dc "BT Shutter"
 ```
 This command is setting device name.Default is "BT Shutter".If your device is other name ,use this command.  
 
-output exsample:
 ```
-
+blue-morse -os (txt)
+```
+This commands is showing morse-code exsample.
+ezsample:
+```
+blue-morse -os "HELLO"
 ```
