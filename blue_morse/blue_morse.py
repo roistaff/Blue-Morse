@@ -30,7 +30,6 @@ def main(device_path):
     end = 3000000000
     while True:
         try:
-            print("Blue-Morse")
             print(device)
             print("OUTPUT:")
             for event in device.read_loop():
@@ -66,6 +65,7 @@ def main(device_path):
             print("retry...", end='\r')
             time.sleep(1)
 def autostart():
+    print("Blue-Morse")
     if len(args) > 1:
         if args[1] == "-sc":
             try:
@@ -103,4 +103,3 @@ def autostart():
             sys.exit()
     device=search_device()
     main(device)
-
