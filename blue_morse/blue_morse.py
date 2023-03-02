@@ -68,17 +68,39 @@ def main(device_path):
 def autostart():
     if len(args) > 1:
         if args[1] == "-sc":
-            set_spacetime(float(args[2]))
+            try:
+                set_spacetime(float(args[2]))
+            except IndexError:
+                print("No found time")
+                sys.exit()
+            except:
+                print("Unknown Error")
+                sys.exit()
         elif args[1] == "-dc":
-            set_devicename(str(args[2]))
+            try:
+                set_devicename(str(args[2]))
+            except IndexError:
+                print("No found device name")
+                sys.exit()
+            except:
+                print("Unknown Error")
+                sys.exit()
         elif args[1] == "-h":
             print("Blue-Morse help \n command option \n blue-morse -sc (time)  #set space time \n blue-morse -os (txt)  #morse-code sample \n blue-morse -dc (device name)  # set device name. \n Anything else? Please visit Github:https://github.com/roistaff/Blue-Morse")
             sys.exit()
         elif args[1] == "-os":
-            sample = pymorse.string_to_code(str(args[2]))
+            try:
+                sample = pymorse.string_to_code(str(args[2]))
+            except IndexError:
+                print("No found string")
+                sys.exit()
+            except:
+                print("Unknown Error")
+                sys.exit()
             print("Morse sample:",sample)
         else:
             print("Unknown command.Please write 'blue-morse -h' ")
             sys.exit()
     device=search_device()
     main(device)
+
