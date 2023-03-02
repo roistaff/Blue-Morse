@@ -10,8 +10,8 @@ Blue-Morse is able to write text in morse-code by this shutter.
 ## INSTALL
 
 ```
-pip install git+https://github.com/roistaff/PyMorse
-pip install git+https://github.com/roistaff/Blue-Morse
+sudo pip install git+https://github.com/roistaff/PyMorse
+sudo pip install git+https://github.com/roistaff/Blue-Morse
 ```
 
 ## USAGE
