@@ -22,14 +22,6 @@ blue-morse
 
 ### command option
 ```
-blue-morse -sc (time)
-```
-exsample:
-```
-blue-morse -sc 2.5
-```
-This command is setting spacetime.Spacetime has  replaced "_".
-```
 blue-morse -dc (device name)
 ```
 exsample:
@@ -48,4 +40,4 @@ blue-morse -os "HELLO"
 ```
 
 ## Support
-Blue-Morse is supported on Linux.__It is not supported in Mac and Windows.__ Sorry.
+Blue-Morse is supported on Linux.__It is not supported on Mac and Windows.__ Sorry.
