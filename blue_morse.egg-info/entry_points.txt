@@ -1,3 +1,0 @@
-[console_scripts]
-blue-morse = blue_morse.blue_morse:autostart
-
