@@ -48,4 +48,4 @@ blue-morse -os "HELLO"
 ```
 
 ## Support
-Blue-Morse is supported on Linux._It is not supported in Mac and Windows._ Sorry.
+Blue-Morse is supported on Linux.__It is not supported in Mac and Windows.__ Sorry.
