@@ -46,3 +46,6 @@ ezsample:
 ```
 blue-morse -os "HELLO"
 ```
+
+## Support
+
