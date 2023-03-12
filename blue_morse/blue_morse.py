@@ -8,6 +8,8 @@ global spacetime
 spacetime = 1.5
 global devicename
 devicename = "BT Shutter"
+global retry
+retry = 0
 def set_spacetime(time):
     spacetime = time
 def set_devicename(name):
@@ -62,8 +64,12 @@ def main(device_path):
                         else:
                             print(text, end='\r')
         except KeyboardInterrupt:
+            print("\n")
             break
         except:
+            retry += 1
+            if retry == 5:
+                break
             print("retry...", end='\r')
             time.sleep(1)
 def autostart():
