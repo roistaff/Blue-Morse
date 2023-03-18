@@ -6,7 +6,7 @@ import sys
 args = sys.argv
 global spacetime
 spacetime = 1.5
-devicename = "BT Shutter"
+devicename = "Shutter"
 global retry
 retry = 0
 def set_devicename(name):
