@@ -85,3 +85,4 @@ def autostart():
             sys.exit()
     device=search_device()
     main(device)
+
