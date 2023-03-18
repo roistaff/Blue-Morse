@@ -65,7 +65,7 @@ def main(device_path):
             print("\n")
             break
         except:
-            retry += 1
+            retry + 1
             if retry == 5:
                 break
             print("retry...", end='\r')
