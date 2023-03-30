@@ -22,7 +22,7 @@ def search_device():
             device_path = device.path
             return device_path
     if found == 0:
-        print("No found.Please check device name,etc.Try again.")
+        print("Not found.Please check device name,etc.Try again.")
         sys.exit()
 def main(device_path):
     device =evdev.InputDevice(device_path)
