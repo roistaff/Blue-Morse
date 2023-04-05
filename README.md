@@ -40,7 +40,7 @@ blue-morse -os "HELLO"
 ```
 
 ## Support
-Blue-Morse is supported on Linux.__It is not supported on Mac and Windows.__ Sorry.
+Blue-Morse is supported on Linux.(raspberry-pi)__It is not supported on Mac and Windows.__ Sorry.
 ## Author
 Staff Roi roistaff1983@gmail.com
 He is one of WhiteSkunk menber.
